@@ -4,13 +4,13 @@ function calcularVelocidade() {
   let resultado = document.getElementById("resultado");
 
   if (kilometros >= 100) {
-    velocidade = "Alta velocidade";
+    velocidade = "Infração gravíssima";
   }
   else if (kilometros >= 50 && kilometros < 100) {
-    velocidade = "Velocidade moderada";
+    velocidade = "Infração grave";
   }
   else if (kilometros >= 20 && kilometros < 50) {
-    velocidade = "Velocidade normal";
+    velocidade = "Infração média";
   } else {
     velocidade = "Parado";
   }
