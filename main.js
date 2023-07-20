@@ -4,15 +4,15 @@ function calcularVelocidade() {
   let resultado = document.getElementById("resultado");
 
   if (kilometros >= 100) {
-    velocidade = "rápido";
+    velocidade = "Alta velocidade";
   }
   else if (kilometros >= 50 && kilometros < 100) {
-    velocidade = "moderada";
+    velocidade = "Velocidade moderada";
   }
   else if (kilometros >= 20 && kilometros < 50) {
-    velocidade = "devagar";
+    velocidade = "Velocidade normal";
   } else {
-    velocidade = "parado";
+    velocidade = "Parado";
   }
   console.log("clicou")
   console.log(kilometros)
