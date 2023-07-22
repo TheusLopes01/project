@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-  <script src="./main.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <title>Radar</title>
-</head>
-<body>
-  <header>
-    <h1>RADAR ⚠ </h1>
-   <input 
-   id="velocidade"
-   type="text"
-   size="1"
-   onkeypress="calcularVelocidade()">
-   🚘 KM/H
-  <button id="verificar" onclick="calcularVelocidade()">
-    verificar
-  </button>
-    <div id="resultado"></div>
-    <br>
-    <p>Motorista trafegando até 20% acima do limite: infração média;</p>
-    <p>Mais de 20% até 50%: infração grave;</p>
-    <p>Mais de 50%: infração gravíssima.</p>
-
-  </header>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Radar</title>
+  </head>
+  <body>
+    <header>
+      <h1>RADAR ⚠</h1>
+      <input id="velocidade" type="text" size="1" />
+      🚘 KM/H
+      <button id="verificar" onclick="calcularVelocidade()">verificar</button>
+      <div id="resultado"></div>
+      <br />
+      <p>O limite de velocidade é de 60 Km/h;</p>
+      <p>Motorista trafegando até 20% acima do limite: infração média;</p>
+      <p>Mais de 20% até 50%: infração grave;</p>
+      <p>Mais de 50%: infração gravíssima.</p>
+    </header>
+  </body>
 </html>
