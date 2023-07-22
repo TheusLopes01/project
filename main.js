@@ -1,28 +1,20 @@
 function calcularVelocidade() {
   let velocidade = ""
-  const kilometros = document.getElementById("velocidade").value;
-  let resultado = document.getElementById("resultado");
-
-  if (kilometros >= 100) {
-    velocidade = "Infração gravíssima";
-  }
-  else if (kilometros >= 50 && kilometros < 100) {
-    velocidade = "Infração grave";
-  }
-  else if (kilometros >= 20 && kilometros < 50) {
-    velocidade = "Infração média";
+  const kilometros = document.getElementById("velocidade").value
+  let resultado = document.getElementById("resultado")
+  // o limite de velocidade é de 60 Km/h
+  if (kilometros >= 90) {
+    velocidade = "Infração gravíssima" // 50% acima do limite de velocidade
+  } else if (kilometros >= 72 && kilometros < 90) {
+    velocidade = "Infração grave" // 20% até 50% acima do limite de velocidade
+  } else if (kilometros >= 60 && kilometros < 72) {
+    velocidade = "Infração média" // 20% acima do limite de velocidade
   } else {
-    velocidade = "Parado";
+    velocidade = "Sem infração" // abaixo do limite de velocidade
   }
   console.log("clicou")
   console.log(kilometros)
   console.log(velocidade)
-  
+
   resultado.innerHTML = velocidade
-  
 }
-
-
-
-
-
