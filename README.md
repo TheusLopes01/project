@@ -1,6 +1,6 @@
-# radar
+# ⚠ Radar
 
-Um projeto de Radar, que dependendo da velocidade, executa funções para dizer o nivel de multa, utilizando o IF, ELSE E ELSEIF
+Um projeto de Radar, que dependendo da velocidade, executa funções para dizer o nivel de multa, utilizando o IF, ELSE E ELSE IF.
 
 Esse projeto foi desenvolvido com as seguintes tecnologias: 
 - HTML e CSS
